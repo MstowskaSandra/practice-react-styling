@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
+import * as S from "./Alert.styled";
 
-import { StyledAlert } from './Alert.styled';
-
-const Alert = props => {
-    return (
-        <StyledAlert>{props.children}</StyledAlert>
-    );
-}
+const Alert = ({ variant = "primary", children }) => {
+  return <S.Alert variant={variant}>{children}</S.Alert>;
+};
 
 export default Alert;

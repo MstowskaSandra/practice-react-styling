@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from "styled-components";
-import Alert from "./src/components/Alert";
+import Alert from "../src/components/Alert/Alert";
 import { Row, Col, Alert as RBAlert } from "react-bootstrap";
 
 const theme = {
