@@ -6,17 +6,16 @@ export const Alert = styled.div`
   border-radius: 0.2rem;
   color: ${({ variant, theme }) =>
     variant === "primary"
-      ? theme.colors.primaryText ?? "#004085"
-      : variant === "secondary"
-      ? theme.colors.secondaryText ?? "#383d41"
-      : "#004085"};
+      ? theme.colors.primaryText
+      : theme.colors.secondaryText};
 
   background-color: ${({ variant, theme }) =>
-    theme.colors?.[variant] ?? (variant === "primary" ? "#CCE5FF" : "#E2E3E5")};
+    variant === "primary" ? theme.colors.primary : theme.colors.secondary};
 
   border: 1px solid
     ${({ variant, theme }) =>
-      theme.colors?.[`${variant}Border`] ??
-      (variant === "primary" ? "#B8DAFF" : "#D6D8DB")};
+      variant === "primary"
+        ? theme.colors.primaryBorder
+        : theme.colors.secondaryBorder};
   font-size: 1rem;
 `;
