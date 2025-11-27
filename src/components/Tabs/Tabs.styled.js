@@ -7,7 +7,6 @@ export const TabsWrapper = styled.div`
 export const TabsList = styled.div`
   display: flex;
   border-bottom: 1px solid #dee2e6;
-  margin-bottom: 1rem;
 `;
 
 export const TabButton = styled.button`

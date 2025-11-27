@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import Button from "./../src/components/Button";
 import { Row, Col, Button as RBButton } from "react-bootstrap";
 
-const theme = {
+export const theme = {
   colors: {
     primary: "#007BFF",
     primaryText: "white",
