@@ -15,12 +15,11 @@ export const List = styled.ol`
 `;
 
 export const Item = styled.li`
-     display: flex;
+  display: flex;
   align-items: center;
   font-size: 0.95rem;
   color: ${({ active }) => (active ? "#6c757d" : "#0d6efd")};
 
-  /* link w środku */
   a {
     color: #0d6efd;
     text-decoration: none;
@@ -30,7 +29,6 @@ export const Item = styled.li`
     text-decoration: underline;
   }
 
-  /* separator między kolejnymi elementami */
   & + &::before {
     content: "/";
     display: inline-block;
